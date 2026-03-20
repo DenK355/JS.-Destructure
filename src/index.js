@@ -84,7 +84,7 @@ const books = {
 
 }
 
-const [thirdBook, writer] = [books.fantasy[2], books.scienceFiction[3].author];
+const {fantasy: [, , thirdBook], scienceFiction: [, , , {author: writer}]} = books;
 
 console.log(thirdBook);
 console.log(writer);
